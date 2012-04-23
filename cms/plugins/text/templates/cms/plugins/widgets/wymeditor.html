@@ -14,6 +14,8 @@ jQuery(document).ready(function ($) {
     $('#id_{{ name }}').wymeditor({
         lang: '{{ language }}',
         skin: 'django',
+        basePath: "{{ STATIC_URL }}cms/wymeditor/" ,
+        wymPath: "{{ STATIC_URL }}cms/wymeditor/jquery.wymeditor.min.js" ,
         skinPath: "{{ STATIC_URL }}cms/js/wymeditor/skins/django/",
         updateSelector: 'input[type=submit],',
         updateEvent: 'click',
